@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        #div1{
+            color: red;
+        }
+    </style>
 </head>
 <body>
-<div>
-    <form action="">请输入内容提交
-        <div></div>
-        <textarea name="" id="" cols="30" rows="10"></textarea><br>
+<div id="div10">
+    <form action="" id="form1 ">
+        <div id="div1" v-show="!msg">请输入内容提交</div>
+        <textarea name="" id="text1" cols="30" rows="10" v-model="msg"></textarea><br>
         <button>button</button>
     </form>
+    <pre>{{$data|json}}</pre>
 </div>
-
-
 <!--##############-->
 <script src="vue_pack/vue1028.min.js"></script>
-
+<script>
+    new Vue({
+        el:'#div10',
+        data:{
+            msg:''
+        }
+    })
+</script>
 
 </body>
 </html>

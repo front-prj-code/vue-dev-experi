@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>t3</title>
+</head>
+<body>
+<div id="examp">
+    <button v-on:click="greet">Greet</button>
+    <!--<button @click="greet">Greet</button>-->
+</div>
+<!--##############-->
+<script src="vue_pack/vue1028.min.js"></script>
+<script>
+    var vue1=new Vue({
+        el:"#examp",
+        data:{
+            name:'vue.js'
+        },
+        methods:{
+            greet:function (event) {
+                alert('hello'+this.name)
+                alert(event.target.tagName)
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>

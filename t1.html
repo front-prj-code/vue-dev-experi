@@ -6,17 +6,45 @@
 </head>
 <body>
 
-<dev id="div1">{{ msg }}</dev>
+<div id="div1">{{ msg }}</div>
 
+<div  id="div2">
+    <div v-if="isShowha">Go home to eat!</div>
+</div>
+
+<div id="div3">{{{raw_html}}</div>
+<div id="div4">{{*msg2}}</div>
 <script src="vue_pack/vue1028.min.js"></script>
 <script>
-new Vue({
+var vue1=new Vue({
         el: '#div1',
         data: {
             msg: 'yangshun'
         }
     }
-)
+);
+var vue2=new Vue({
+    el:'#div2',
+    data:{
+        isShowha:true
+    }
+
+});
+
+var vue3=new Vue({
+    el:'#div3',
+    data:{
+        raw_html:"<h1>hello</h1>"
+    }
+});
+
+var vue4=new Vue({
+    el:'#div4',
+    data:{
+        msg2:'only show once'
+    }
+})
+
 </script>
 </body>
 </html>
