@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>h5</title>
+</head>
+<body>
+<input type="button" value="开始">
+<input type="button" value="结束">
+<script type="application/javascript">
+    var startBtn=document.getElementsByTagName("Input")[0];
+    var endBtn=document.getElementsByTagName("Input")[1];
+    function start() {
+        alert("start?")
+        this.style.background="green"
+    }
+    function end() {
+        alert("end?");
+        this.style.background="red"
+    }
+    startBtn.onclick=start;
+    endBtn.onclick=end
+
+</script>
+</body>
+</html>
