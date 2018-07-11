@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*div{*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*background: #666666;*/
+    /*position: relative;*/
+    /*left: 30px;*/
+/*}*/
+.div1{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background:rebeccapurple;
+    position: relative;  /*相对布局定位*/
+    left: 125px;
+}
+
+.div2{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background:greenyellow;
+    position: absolute;   /* 绝对布局定位 */
+    left: 400px;
+}
+.div3{
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    background:cornflowerblue;
+    position: fixed;   /* 固定布局定位 */
+    right: 5px;
+
+
+}
+
+.div4{
+    width: 100px;
+    height: 200px;
+    border-radius: 10px;
+    background:mediumvioletred;
+    position: static;   /* 固定布局定位 */
+
+}
+

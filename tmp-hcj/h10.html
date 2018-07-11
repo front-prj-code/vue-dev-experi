@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>h10</title>
+</head>
+<input id="btn" type="button">已选择iphon6</input>
+<body>
+<script>
+    var bt=document.getElementById("btn");
+    btn.onclick=function () {
+        var res=window.confirm("请你确定是否要？");
+        if (res==true){
+            alert("已加入购物车")
+            res = false;
+        } else {
+            btn.removeAttribute("type");
+            promise9()
+            // function f(e) {
+            //     var rs=this.confirm("你需要选择别的手机吗？");
+            //     if (rs){
+            //         return "http://www.baidu.com"
+            //     } else {
+            //         alert("滚远些")
+            //     }
+            // }
+            // f()
+        }
+
+    }
+</script>
+
+</body>
+</html>

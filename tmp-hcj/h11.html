@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>h11</title>
+    <style>
+        #b_btn{
+            width: 50px;
+            /*height: 20px;*/
+        }
+    </style>
+</head>
+<body>
+<input type="text" id="btnValue" value=""><br/>
+<input type="button" id="b_btn" value="按钮">
+
+<script>
+
+    var btn=document.getElementById("b_btn");
+    var btn_1=document.getElementById("btnValue");
+    (function () {
+        btn.style.width="100px"
+    })()
+    btn.onclick=function () {
+        // console.log(btn_1.value)
+        switch (btn_1.value){
+            case "1":
+                console.log(1);
+                break
+            case "2":
+                console.log(2);
+                break
+            case "3":
+                console.log(3);
+                break
+            default:
+                console.log("input erro")
+                break
+
+        }
+        var tmp=prompt("pls input")
+        console.log(tmp)
+    }
+</script>
+</body>
+</html>
