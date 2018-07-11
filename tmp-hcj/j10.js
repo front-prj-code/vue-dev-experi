@@ -14,3 +14,7 @@ s2=new Obj("huahua",23,"女");
 
 //对象方法的调用
 s1.sayHi();
+
+//对象的属性调用方法
+console.log(s1["name"])
+console.log(s1.name)
