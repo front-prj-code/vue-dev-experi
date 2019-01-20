@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue2-00 vue temlpate修改h5标签和内容</title>
+    <script src="../vue_pack/vue-dev-2.x.js"></script>
+
+</head>
+<body>
+<p5 id="app00"></p5>
+</body>
+<script>
+    var my=new Vue({
+        el:'#app00',
+        template:'<h1>{{tmp_el}},{{msg}}</h1>',
+        data:{
+            msg:'yanngshun',
+            tmp_el:'learn hard'
+        }
+    })
+</script>
+</html>
